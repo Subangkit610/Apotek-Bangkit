@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 // Perhatikan: semua path folder gunakan huruf kecil konsisten
-import Home from './Pages/HomePage';
+import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Katalog from './pages/Katalog';
 import Keranjang from './pages/Keranjang';
