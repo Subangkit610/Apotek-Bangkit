@@ -1,23 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Youtube } from "lucide-react";
-import videoSource from "../assets/video-apotek-bangkit.mp4";
 
 const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[500px] md:h-[550px] overflow-hidden mt-16 bg-black">
-        {/* Video background ditampilkan penuh dan proporsional */}
+      <section className="relative h-[500px] md:h-[550px] overflow-hidden mt-1 bg-black">
+        {/* Video background */}
         <div className="absolute inset-0 z-0">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-contain bg-black"
+            className="w-full h-full object-cover"
+            src="/assets/video-apotek-bangkit.mp4"
+            type="video/mp4"
           >
-            <source src={videoSource} type="video/mp4" />
             Browser tidak mendukung video.
           </video>
         </div>

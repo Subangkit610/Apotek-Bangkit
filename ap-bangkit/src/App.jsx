@@ -4,9 +4,11 @@ import Navbar from './components/Navbar';
 
 // Perhatikan: semua path folder gunakan huruf kecil konsisten
 import Home from './Pages/HomePage';
+import AboutUs from './pages/AboutUs';
 import Katalog from './pages/Katalog';
-import Contact from './pages/Contact';
-import Order from './pages/Order';
+import Keranjang from './pages/Keranjang';
+import Transaksi from './pages/Transaksi';
+
 
 function App() {
   return (
@@ -19,9 +21,11 @@ function App() {
         <main className="flex-grow mt-16"> {/* mt-16 untuk beri ruang di bawah navbar */}
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
             <Route path="/katalog" element={<Katalog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/order" element={<Order />} />
+            <Route path="/keranjang" element={<Keranjang />} />
+            <Route path="/transaksi" element={<Transaksi />} />
+            {/* Tambahkan route lain sesuai kebutuhan */}
           </Routes>
         </main>
 
