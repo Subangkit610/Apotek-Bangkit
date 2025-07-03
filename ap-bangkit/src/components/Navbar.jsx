@@ -21,7 +21,7 @@ const Navbar = () => {
             alt="Apotek Bangkit"
             className="w-14 h-14 object-contain"
           />
-          <span className="text-blue-900 text-2xl font-bold">Apotek Bangkit</span>
+          <span className="text-blue-900 text-2xl font-bold">Apotek Bangkit (uji coba)</span>
         </Link>
 
         {/* Desktop Menu */}
