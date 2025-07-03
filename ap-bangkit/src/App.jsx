@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 // Perhatikan: semua path folder gunakan huruf kecil konsisten
-import Home from './pages/Home';
+import Home from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
 import Katalog from './pages/Katalog';
 import Keranjang from './pages/Keranjang';
 import Transaksi from './pages/Transaksi';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -25,12 +26,12 @@ function App() {
             <Route path="/katalog" element={<Katalog />} />
             <Route path="/keranjang" element={<Keranjang />} />
             <Route path="/transaksi" element={<Transaksi />} />
-            {/* Tambahkan route lain sesuai kebutuhan */}
+            <Route path="/footer" element={<Footer />} />
           </Routes>
         </main>
 
         {/* Footer bisa ditambahkan di sini jika universal */}
-        {/* <Footer /> */}
+       <Footer />
       </div>
     </Router>
   );
